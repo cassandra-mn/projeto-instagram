@@ -19,9 +19,6 @@
         width: 100vw;
     }
 
-    .meio {
-        position: absolute;
-    }
 }
 
 /* MOBILE */    
@@ -81,7 +78,7 @@
     
     .publicacao {
         width: 100vw;
-        height: auto;
+        height: 765px;
     }
     
     .informacoes {
@@ -96,6 +93,10 @@
     .interacao {
         width: 100vw;
         height: 100%;
+    }
+
+    .publicar {
+        display: none;
     }
     
     .baixo {

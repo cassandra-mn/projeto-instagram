@@ -51,6 +51,7 @@ body {
     width: 215px;
     height: 28px;
     border-radius: 3px;
+    padding-left: 80px;
     box-sizing: border-box;
     border: 1px solid black;
     background-color: #FAFAFA;
@@ -146,6 +147,7 @@ body {
     width: 26px;
     height: 26px;
     color: #FFFFFF;
+    filter: drop-shadow(3px 3px 2px #9999)
 }
 
 .botao {
@@ -164,7 +166,7 @@ body {
 
 .baixo {
     width: 100vw;
-    height: 1946px;
+    height: 2400px;
     display: flex;
     justify-content: center;
     background: #FAFAFA;
@@ -173,7 +175,7 @@ body {
 
 .feed {
     width: 614px;
-    height: 1956px;
+    height: 2300px;
     overflow: hidden;
     margin-right: 30px;
 }
@@ -216,7 +218,7 @@ body {
 
 .publicacao {
     width: 614px;
-    height: 749px;
+    height: 880px;
     margin-bottom: 60px;
     background: #FFFFFF;
     border: 1px solid #DBDBDB;
@@ -229,8 +231,19 @@ body {
     height: 612px;
 }
 
+.publicacao .video {
+    width: 612px;
+    height: 560px;
+    background-color: black;
+}
+
+.video video {
+    width: 100%;
+    height: auto;
+}
+
 .publicacao .interacao {
-    height: 76px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -253,13 +266,15 @@ body {
 .todas-opcoes {
     display: flex;
     justify-content: space-between;
-    height: 22px;
+    margin-top: 80px;
+    height: 25px;
+    padding: 3px;
 }
 
 .curtidas {
-    height: 20px;
     display: flex;
     align-items: center;
+    padding: 5px;
 } 
 
 .imagem-curtidas {
@@ -270,18 +285,16 @@ body {
 .imagem-curtidas img {
     width: 20px;
     height: 20px;
-    margin-left: 17px;
-    margin-bottom: 14px;
+    margin-left: 15px;
     margin-right: 5px; 
     border-radius: 10px;
 }
 
 .curtido-por {
     width: calc(100%-37px);
-    height: 21px;
+    height: 25px;
     display: flex;
     align-items: center;
-    margin-bottom: 13px;
 }
 
 .curtido-por p {
@@ -292,12 +305,77 @@ body {
     color: #000000;
 }
 
+.comentario {
+    width: 93%;
+    height: 20px;
+    margin-left: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.comentario p {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.comentario a {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 2px;
+    color: #8E8E8E;
+    text-decoration: none;
+}
+
+ion-icon:hover {
+    cursor: pointer;
+}
+
+.publicar {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #DBDBDB;
+}
+
+.publicar ion-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+}
+
+.publicar input {
+    width: 100%;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: 0;
+    padding-left: 5px;
+}
+
+.publicar button {
+    color: #B2DFFC;
+    border: none;
+    margin-right: 10px;
+    background-color: #FFFFFF;
+}
+
+button:hover {
+    transition: color 300ms linear 0.s;
+    color: #0095F6;
+    cursor: pointer;
+}
+
 /* LATERAL */
 
 .lateral {
     width: 300px;
     height: 600px;
-    right: 275px;
+    margin-left: 0;
     top: 88px;
     display: flex;
     flex-direction: column;
